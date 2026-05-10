@@ -26,7 +26,6 @@ jobs:
       - name: npm install, build, and test
         #1
         env:
-          NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}
           NEXT_PUBLIC_API_BASE: ${{ secrets.NEXT_PUBLIC_API_BASE }}
           #CODEX追加
           API_PROXY_TARGET: ${{ secrets.NEXT_PUBLIC_API_BASE }}
@@ -51,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: deploy #CODEX指示
 
   deploy:
     runs-on: ubuntu-latest
@@ -69,5 +68,5 @@ jobs:
         with:
           app-name: 'tech0-gen-11-step3-2-node-3'
           slot-name: 'Production'
-          package: ./deploy  #4
+          package: . #CODEX指示
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B2BEE1D2DCB8404C8B3C54DB9F7CB6E4 }}
