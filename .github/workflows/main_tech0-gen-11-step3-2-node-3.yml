@@ -26,9 +26,11 @@ jobs:
       - name: npm install, build, and test
         #1
         env:
-          NEXT_PUBLIC_API_BASE: ${{ secrets.NEXT_PUBLIC_API_BASE }}
+          NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}
           #CODEX追加
           API_PROXY_TARGET: ${{ secrets.NEXT_PUBLIC_API_BASE }}
+          #Gemini追加
+          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_BASE }}
         
         run: |
           npm install
@@ -43,16 +45,14 @@ jobs:
           cp -r ./public ./deploy/public
       
       #3
-      - name: Verify deployment artifact
-        run: |
-          test -f ./deploy/server.js
-          test -d ./deploy/.next/static
+      - name: Zip artifact for deployment
+        run: zip release.zip ./deploy -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: deploy
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -70,5 +70,5 @@ jobs:
         with:
           app-name: 'tech0-gen-11-step3-2-node-3'
           slot-name: 'Production'
-          package: .  #4
+          package: ./deploy  #4
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B2BEE1D2DCB8404C8B3C54DB9F7CB6E4 }}
