@@ -43,8 +43,14 @@ jobs:
           cp -r ./public ./deploy/public
       
       #3
-      - name: Zip artifact for deployment
-        run: zip release.zip ./deploy -r
+      #- name: Zip artifact for deployment
+        #run: zip release.zip ./deploy -r
+
+      #CODEX指示
+      - name: Verify deployment artifact
+        run: |
+          test -f ./deploy/server.js
+          test -d ./deploy/.next/static
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
