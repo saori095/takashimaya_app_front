@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bgKimura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="lightKimura" cx="30%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bgKimura)"/>
+  <rect width="300" height="300" fill="url(#lightKimura)"/>
+  <g opacity="0.18" stroke="#fff" stroke-width="1" fill="none">
+    <line x1="0" y1="60" x2="300" y2="60"/>
+    <line x1="0" y1="240" x2="300" y2="240"/>
+    <line x1="60" y1="0" x2="60" y2="300"/>
+    <line x1="240" y1="0" x2="240" y2="300"/>
+  </g>
+  <circle cx="150" cy="118" r="46" fill="#f8fafc" opacity="0.95"/>
+  <path d="M 82 232 Q 82 178 150 178 Q 218 178 218 232 L 218 300 L 82 300 Z" fill="#f8fafc" opacity="0.95"/>
+  <text x="150" y="132" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="44" font-weight="600" fill="#1e293b" text-anchor="middle" dominant-baseline="middle">木</text>
+  <text x="150" y="220" font-family="'Hiragino Sans', sans-serif" font-size="13" fill="#1e293b" text-anchor="middle" letter-spacing="2.5">KIMURA</text>
+</svg>

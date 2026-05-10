@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bgSantos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <radialGradient id="lightSantos" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bgSantos)"/>
+  <rect width="300" height="300" fill="url(#lightSantos)"/>
+  <g opacity="0.22" fill="#fde68a">
+    <polygon points="50,40 54,50 64,50 56,57 59,68 50,61 41,68 44,57 36,50 46,50"/>
+    <polygon points="255,90 258,98 266,98 260,103 262,111 255,106 248,111 250,103 244,98 252,98"/>
+  </g>
+  <circle cx="150" cy="120" r="48" fill="#fff" opacity="0.95"/>
+  <path d="M 80 230 Q 80 175 150 175 Q 220 175 220 230 L 220 300 L 80 300 Z" fill="#fff" opacity="0.95"/>
+  <text x="150" y="135" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="56" font-weight="700" fill="#6d28d9" text-anchor="middle" dominant-baseline="middle">M</text>
+  <text x="150" y="220" font-family="'Hiragino Sans', sans-serif" font-size="13" fill="#6d28d9" text-anchor="middle" letter-spacing="2">SANTOS</text>
+</svg>

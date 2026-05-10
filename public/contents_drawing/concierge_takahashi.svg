@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bgTakahashi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78716c"/>
+      <stop offset="100%" stop-color="#3f3f3f"/>
+    </linearGradient>
+    <radialGradient id="lightTakahashi" cx="32%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bgTakahashi)"/>
+  <rect width="300" height="300" fill="url(#lightTakahashi)"/>
+  <g opacity="0.15" stroke="#fff" stroke-width="0.8" fill="none">
+    <path d="M 0 75 Q 150 65 300 75"/>
+    <path d="M 0 225 Q 150 235 300 225"/>
+  </g>
+  <circle cx="150" cy="118" r="46" fill="#f5f5f4" opacity="0.95"/>
+  <path d="M 82 232 Q 82 178 150 178 Q 218 178 218 232 L 218 300 L 82 300 Z" fill="#f5f5f4" opacity="0.95"/>
+  <text x="150" y="132" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="44" font-weight="600" fill="#3f3f3f" text-anchor="middle" dominant-baseline="middle">髙</text>
+  <text x="150" y="220" font-family="'Hiragino Sans', sans-serif" font-size="13" fill="#3f3f3f" text-anchor="middle" letter-spacing="2">TAKAHASHI</text>
+</svg>

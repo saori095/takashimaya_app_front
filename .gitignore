@@ -1,0 +1,62 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ─── 依存パッケージ（最大容量・絶対除外） ───────────────────────
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ─── Next.js / Turbopack / SWC 成果物 ─────────────────────────
+/.next/
+/out/
+/build/
+/.turbo/
+/.swc/
+/.cache/
+/.parcel-cache/
+
+# ─── テスト・カバレッジ ─────────────────────────────────────
+/coverage
+.nyc_output/
+*.lcov
+
+# ─── TypeScript インクリメンタルビルド ──────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── 環境変数 ────────────────────────────────────────────
+.env*
+!.env.example
+
+# ─── デプロイメント ───────────────────────────────────────
+.vercel
+.netlify
+
+# ─── ネイティブモジュール / プリビルドバイナリ ─────────────
+*.node
+
+# ─── ログ ────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs/
+
+# ─── IDE / OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── 証明書・一時ファイル ─────────────────────────────────
+*.pem
+*.bak
+*.tmp
+node_modules

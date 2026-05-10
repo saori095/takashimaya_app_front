@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80" role="img" aria-label="黄白結び切り">
+  <rect width="200" height="80" fill="#fafaf9"/>
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M10 32 L96 40" stroke="#ca8a04"/>
+    <path d="M10 40 L96 40" stroke="#ca8a04"/>
+    <path d="M10 48 L96 40" stroke="#ca8a04"/>
+    <path d="M104 40 L190 32" stroke="#d4d4d8"/>
+    <path d="M104 40 L190 40" stroke="#d4d4d8"/>
+    <path d="M104 40 L190 48" stroke="#d4d4d8"/>
+  </g>
+  <rect x="92" y="34" width="16" height="12" rx="2" fill="#854d0e"/>
+  <line x1="92" y1="40" x2="108" y2="40" stroke="#fafaf9" stroke-width="1"/>
+</svg>

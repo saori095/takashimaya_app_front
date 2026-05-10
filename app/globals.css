@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* takashimaya 和モダンブランドカラー（oklch / takashimaya-next-fastapi-work index.css 由来） */
+:root {
+  --color-brand:        oklch(0.40 0.18 20);  /* 高島屋紅（深いクリムゾン） */
+  --color-brand-dark:   oklch(0.32 0.18 20);  /* hover 用 */
+  --color-brand-fg:     oklch(0.98 0.005 60); /* 紅地に乗せるクリーム文字色 */
+  --color-brand-gold:   oklch(0.75 0.12 80);  /* アクセント金 */
+  --color-brand-cream:  oklch(0.98 0.005 60); /* 暖色クリーム背景 */
+  --color-brand-ink:    oklch(0.18 0.02 30);  /* 主文字（ほぼ黒） */
+  --color-brand-muted:  oklch(0.50 0.02 30);  /* セカンダリ文字 */
+  --color-brand-border: oklch(0.88 0.01 60);  /* 暖色ボーダー */
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-ink);
+  }
+  h1, h2, h3 { font-family: 'Noto Serif JP', serif; }
+}
