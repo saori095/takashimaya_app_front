@@ -27,6 +27,8 @@ jobs:
         #1
         env:
           NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}
+          #CODEX追加
+          API_PROXY_TARGET: ${{ secrets.NEXT_PUBLIC_API_BASE }}
         
         run: |
           npm install
